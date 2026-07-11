@@ -20,7 +20,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="border-t border-white/10 bg-[#141414] px-4 py-12 text-sm text-zinc-400 md:px-8">
+    <footer className="border-t border-white/10 bg-[#000000] px-4 py-12 text-sm text-zinc-400 md:px-8">
       <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-3">
         {columns.map((column, index) => (
           <div key={index} className="space-y-3">
@@ -32,7 +32,14 @@ export default function Footer() {
           </div>
         ))}
       </div>
-      <p className="mx-auto mt-10 max-w-6xl text-xs text-zinc-500"> © 2026 Areeba Murtaza. All rights reserved.</p>
+      <div className="mx-auto mt-10 flex max-w-6xl flex-wrap items-center gap-4 text-xs text-zinc-500">
+        <select className="rounded-md border border-white/15 bg-black px-3 py-2 text-sm text-white">
+          <option>English</option>
+          <option>Hindi</option>
+          <option>Urdu</option>
+        </select>
+        <p>© 2026 Areeba Murtaza. All rights reserved.</p>
+      </div>
     </footer>
   );
 }

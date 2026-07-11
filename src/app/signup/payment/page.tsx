@@ -1,7 +1,5 @@
-"use client";
-
 import { redirect } from "next/navigation";
 
-export default function PofilesAliasPage() {
+export default function SignupPaymentPage() {
   redirect("/profiles");
 }

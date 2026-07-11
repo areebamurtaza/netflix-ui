@@ -1,17 +1,34 @@
 import Navbar from "@/components/Navbar";
 import ContentRow from "@/components/ContentRow";
+import Hero from "@/components/Hero";
 import { movies } from "@/data/movies";
 
 export default function MoviesPage() {
+	const rows = [
+		"Tamil Language Movies",
+		"Trending Now",
+		"Sci-Fi & Fantasy",
+		"Telugu Language Movies",
+		"Hindi Language Movies",
+		"Children & Family Movies",
+		"Action Thrillers",
+		"Top 10 TV Movies",
+		"Blockbuster Movies",
+		"Crime",
+		"Adventure",
+		"New Release",
+		"Continue Watching",
+		"Popular on Netflix",
+	];
+
 	return (
 		<main className="min-h-screen bg-[#141414] text-white">
 			<Navbar />
+			<Hero title="Movies" description="Browse movies across genres." imagePath="/images/home-bg.png" />
 			<section className="space-y-8 py-10">
-				<div className="px-4 md:px-8">
-					<h1 className="text-3xl font-black md:text-5xl">Movies</h1>
-					<p className="mt-3 max-w-2xl text-sm text-zinc-400 md:text-base">A simple browse subpage that reuses the same hardcoded movie set in a Netflix-style layout.</p>
-				</div>
-				<ContentRow title="Popular Movies" movies={movies} />
+				{rows.map((row) => (
+					<ContentRow key={row} title={row} movies={movies} />
+				))}
 			</section>
 		</main>
 	);
