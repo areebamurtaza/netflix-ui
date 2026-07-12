@@ -23,3 +23,27 @@ Next.js (App Router), TypeScript, Tailwind CSS. Deployed on Vercel.
 Since there's no backend, everything is just client-side routing pretending to be an auth flow:
 
 
+## Screenshots
+
+![](public/images/s1.png)
+![](public/images/s2.png)
+![](public/images/s3.png)
+![](public/images/s4.png)
+![](public/images/s5.png)
+![](public/images/s6.png)
+![](public/images/s7.png)
+![](public/images/s8.png)
+![](public/images/s9.png)
+![](public/images/s10.png)
+![](public/images/s11.png)
+![](public/images/s12.png)
+![](public/images/s13.png)
+![](public/images/s14.png)
+![](public/images/s15.png)
+![](public/images/s16.png)
+![](public/images/s17.png)
+![](public/images/s18.png)
+![](public/images/s19.png)
+![](public/images/s20.png)
+![](public/images/s21.png)
+![](public/images/s22.png)
