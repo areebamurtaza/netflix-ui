@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { useState } from "react";
+import Image from "next/image"; // Imported Image component
 import FormInput from "@/components/FormInput";
 import Button from "@/components/Button";
 
@@ -17,10 +18,24 @@ export default function AuthSignInPage() {
   }
 
   return (
-    <main className="min-h-screen bg-[#141414] text-white">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(219,32,44,0.18),transparent_45%),linear-gradient(rgba(0,0,0,0.88),rgba(0,0,0,0.88))]" />
-      <div className="mx-auto flex min-h-screen max-w-md items-center px-4 py-16">
-        <form onSubmit={handleSubmit} className="relative z-10 w-full space-y-6 rounded-2xl bg-black/80 p-8 shadow-2xl ring-1 ring-white/10 backdrop-blur-md">
+    <main className="relative min-h-screen bg-[#141414] text-white overflow-x-hidden">
+      
+      {/* Fullscreen Background Image using your local file */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/images/home-bg.png" // Points directly to public/images/home-bg.png
+          alt="Netflix Background"
+          fill
+          priority
+          className="object-cover"
+        />
+        {/* Dark overlay to replicate the exact dimming from your screenshot */}
+        <div className="absolute inset-0 bg-black/50 bg-gradient-to-t from-black via-transparent to-black" />
+      </div>
+
+      {/* Form content remains exactly the same, sitting over the image */}
+      <div className="relative z-10 mx-auto flex min-h-screen max-w-md items-center px-4 py-16">
+        <form onSubmit={handleSubmit} className="w-full space-y-6 rounded-2xl bg-black/75 p-8 shadow-2xl ring-1 ring-white/10 backdrop-blur-md">
           <div className="space-y-2 text-center">
             <p className="text-sm font-semibold uppercase tracking-[0.35em] text-[#DB202C]">Netflix</p>
             <h1 className="text-3xl font-black">Sign In</h1>

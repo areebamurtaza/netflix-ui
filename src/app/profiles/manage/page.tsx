@@ -6,7 +6,7 @@ export default function ManageProfilesPage() {
       <div className="mx-auto flex min-h-[calc(100vh-8rem)] max-w-3xl flex-col items-center justify-center gap-6 text-center">
         <p className="text-sm font-semibold uppercase tracking-[0.35em] text-[#DB202C]">Profiles</p>
         <h1 className="text-3xl font-black md:text-5xl">Manage Profiles</h1>
-        <p className="max-w-xl text-sm text-zinc-400 md:text-base">This is a placeholder management screen for the requested profile dropdown flow.</p>
+        <p className="max-w-xl text-sm text-zinc-400 md:text-base">You can manage your profiles here.</p>
         <Link href="/profiles" className="rounded-md bg-[#DB202C] px-5 py-3 text-sm font-semibold text-white transition duration-200 hover:bg-[#f3121c]">
           Back to Profiles
         </Link>
