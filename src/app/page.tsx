@@ -63,7 +63,7 @@ export default function LandingPage() {
           { title: "Enjoy on your TV", copy: "Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.", image: "/images/poster1.png", reverse: false },
           { title: "Download your shows to watch offline", copy: "Save your favorites easily and always have something to watch.", image: "/images/poster2.png", reverse: true },
           { title: "Watch everywhere", copy: "Stream on your phone, tablet, laptop, and TV without missing a beat.", image: "/images/poster3.png", reverse: false },
-          { title: "Create profile for children", copy: "Kids profiles come with a fun, child-friendly experience and titles for the whole family.", image: "/images/movie1.jpeg", reverse: true },
+          { title: "Create profile for children", copy: "Kids profiles come with a fun, child-friendly experience and titles for the whole family.", image: "/images/poster5.png", reverse: true },
         ].map((feature) => (
           <div key={feature.title} className={`mx-auto grid max-w-7xl items-center gap-8 rounded-3xl bg-zinc-50 p-6 md:grid-cols-2 md:p-10 ${feature.reverse ? "md:[&>*:first-child]:order-2" : ""}`}>
             <div className="space-y-4">
