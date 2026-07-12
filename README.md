@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Netflix Clone (UI only)
 
-## Getting Started
+This is a frontend clone of Netflix I built during my internship — no backend, no real login, just a routing-based flow to mimic how the actual signup/browse experience feels.
 
-First, run the development server:
+Live: https://netflix-ui-by-areeba.vercel.app/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Next.js (App Router), TypeScript, Tailwind CSS. Deployed on Vercel.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## What's in it
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Landing page with the usual dark Netflix hero + "Get Started" / "Sign In" buttons
+- Sign in page
+- Signup — split into two steps, and yes the background is white here on purpose (that's how it is in the original design too, different from the rest of the app)
+- Profile selection screen, 4 profiles hardcoded
+- Browse/home page with a hero banner and rows of movies you can scroll horizontally
+- Bonus pages — TV Shows, Movies, New & Popular, My List — these basically reuse the Browse layout, just different data being passed in
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## How the flow works
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Since there's no backend, everything is just client-side routing pretending to be an auth flow:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
