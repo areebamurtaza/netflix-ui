@@ -74,7 +74,7 @@ export default function Hero({ title, description, imagePath }: HeroProps) {
             
             {/* More Info Button */}
             <Link 
-              href="/title/1" 
+              href="/browse/movies/" 
               className="flex items-center gap-2 rounded-[4px] bg-gray-500/70 px-4 py-1.5 text-sm font-bold text-white transition duration-200 hover:bg-gray-500/50 md:px-7 md:py-2.5 md:text-lg"
             >
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5 md:h-7 md:w-7">
