@@ -220,7 +220,7 @@ export default function SignupStep3Form({ email }: SignupStep3FormProps) {
           {/* Next Button */}
           <div className="mt-10 flex justify-center">
             <Button 
-              onClick={() => router.push("/signup/payment")}
+              onClick={() => router.push("/profiles")}
               className="w-full max-w-[440px] rounded-[4px] py-[18px] text-[24px] font-normal tracking-wide"
               variant="primary"
             >

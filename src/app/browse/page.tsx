@@ -23,9 +23,9 @@ export default function BrowsePage() {
     <main className="min-h-screen bg-[#141414] text-white">
       <Navbar />
       <Hero
-        title="Featured Today"
-        description="Play the featured title or explore more details."
-        imagePath="/images/home-bg.png"
+        //title="Featured Today"
+        //description="Play the featured title or explore more details."
+        //imagePath="/images/home-bg.png"
       />
       <section className="space-y-8 py-10">
         {rows.map((row) => (
