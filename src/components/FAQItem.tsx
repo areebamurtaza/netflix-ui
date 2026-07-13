@@ -13,7 +13,7 @@ export default function FAQItem({ question, answer }: FAQItemProps) {
     <div className="border-b border-zinc-200 py-4">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex w-full items-center justify-between gap-4 text-left text-lg font-medium text-zinc-900"
+        className="flex w-full items-center justify-between gap-4 text-left text-lg font-medium text-white-900"
       >
         <span>{question}</span>
         <span className="text-2xl leading-none text-[#DB202C]">{isOpen ? "-" : "+"}</span>

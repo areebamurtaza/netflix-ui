@@ -26,7 +26,7 @@ export default function AuthSignInPage() {
       {/* 1. Fullscreen Background Image Wrapper */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/home-bg.png" 
+          src="/images/homebg.png" 
           alt="Netflix Background"
           fill
           priority
@@ -41,19 +41,21 @@ export default function AuthSignInPage() {
 
       {/* 3. Center Form Content Container */}
       <div className="relative z-10 mx-auto flex flex-1 w-full max-w-md items-center px-4 py-16 md:py-24">
-        <form onSubmit={handleSubmit} className="w-full space-y-6 rounded-2xl bg-black/75 p-8 shadow-2xl ring-1 ring-white/10 backdrop-blur-md md:p-12">
+        <form onSubmit={handleSubmit} className="w-full space-y-6 rounded-2xl bg-black/75 p-8 shadow-2xl ring-1 ring-white/10 backdrop-blur-md opacity-60 md:p-12">
           <div className="space-y-2 text-left">
             {/* Removed the small centered text logo since it is now top-left */}
-            <h1 className="text-3xl font-black">Sign In</h1>
-            <p className="text-sm text-zinc-400">Use email or phone, then continue into the profile picker.</p>
+            <h1 className="text-3xl font-black text-white-900">Sign In</h1>
+            <p className="text-sm text-white-900">Use email or phone, then continue into the profile picker.</p>
           </div>
 
           <FormInput label="Email or phone number" type="email" value={email} onChange={(event) => setEmail(event.target.value)} />
           <FormInput label="Password" type="password" value={password} onChange={(event) => setPassword(event.target.value)} />
 
-          <Button type="submit">Sign In</Button>
+          <div className="flex items-center justify-center w-[full] pt-2 ">
+            <Button type="submit">Sign In</Button>
+            </div>
 
-          <div className="flex items-center justify-between text-sm text-zinc-400">
+          <div className="flex items-center justify-between text-sm text-white-900">
             <label className="flex items-center gap-2 cursor-pointer">
               <input type="checkbox" className="h-4 w-4 rounded border-zinc-500 bg-transparent accent-[#DB202C]" />
               Remember me
